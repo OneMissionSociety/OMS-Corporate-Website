@@ -1,0 +1,61 @@
+﻿body {
+    background: #fff url('../Images/bodyBkg-Home.gif') repeat-x !important;
+}
+
+/* ID specific definitions */
+
+#introContainer {
+    float: left;
+    margin-top: 20px;
+}
+
+#introParagraph {
+    width: 600px;
+}
+
+#storyBox {
+    margin-top: 20px;
+    height: 175px;
+    width: 275px;
+    float: right;
+}
+    #storyBox img {
+        float: left;
+    }
+    #storyBox a {
+        position: relative;
+        float: left;
+    }
+
+#storyBoxCount {
+    float: right;
+    margin-right: 10px;
+}
+    #storyBoxCount span {
+        color: #b5121b;
+    }
+    #storyBoxCount a {
+        outline: none;
+        text-decoration: none;
+    }
+
+.pictureBox {
+    width: 305px;
+    height: 285px;
+    float: left;
+    margin-right: 15px;
+    background-color: #b5121b;
+    color: White;
+    text-align: justify;
+}
+    .pictureBox .pictureBoxDescription {
+        position: absolute;
+        width: 275px;
+        height: 270px;
+        padding: 0 15px 15px 15px;
+        color: #fff;
+        background-color: #b5121b;
+    }
+        .pictureBox .pictureBoxDescription h2 {
+            font-size:30px !important;
+        }

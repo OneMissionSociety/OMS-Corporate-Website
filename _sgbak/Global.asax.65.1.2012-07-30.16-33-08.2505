@@ -1,0 +1,49 @@
+﻿<%@ Application Language="C#" %>
+<%@ Import Namespace="System.Web.Optimization" %>
+
+<script runat="server">
+
+    void Application_Start(object sender, EventArgs e) 
+    {
+        // Enable default bundles for CSS bundling
+        BundleTable.EnableOptimizations = true;
+        BundleTable.Bundles.EnableDefaultBundles();
+        
+        // Create custom bundle for JS so that the order of bundling can be controlled
+        Bundle myJSBundle = new Bundle("~/ScriptsBundle");
+        myJSBundle.Include("~/Scripts/jquery-1.7.2.min.js");
+        //myJSBundle.Include("~/Scripts/jquery-ui-1.8.22.min.js");
+        myJSBundle.Include("~/Scripts/hoverIntent.js");
+        //myJSBundle.Include("~/Scripts/Site.js");
+
+        BundleTable.Bundles.Add(myJSBundle);
+    }
+    
+    void Application_End(object sender, EventArgs e) 
+    {
+        //  Code that runs on application shutdown
+
+    }
+        
+    void Application_Error(object sender, EventArgs e) 
+    { 
+        // Code that runs when an unhandled error occurs
+
+    }
+
+    void Session_Start(object sender, EventArgs e) 
+    {
+        // Code that runs when a new session is started
+
+    }
+
+    void Session_End(object sender, EventArgs e) 
+    {
+        // Code that runs when a session ends. 
+        // Note: The Session_End event is raised only when the sessionstate mode
+        // is set to InProc in the Web.config file. If session mode is set to StateServer 
+        // or SQLServer, the event is not raised.
+
+    }
+       
+</script>

@@ -1,0 +1,629 @@
+﻿body {
+    background: #fff url('../Images/bodyBkg.gif') repeat-x;
+    margin: 0;
+    padding: 0;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 16px;
+    color: #4c3c31;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+li {
+    margin-bottom: 15px;
+    color: #b5121b;
+}
+
+    li span {
+        color: #4c3c31;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 { font-size: 24px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+
+/* ID specific definitions */
+#headerRight {
+    float: right;
+    margin-right: 20px;
+}
+
+#quickLinks {
+    font-size: .8em;
+    text-align: right;
+}
+
+#soulCount {
+    font-size: 20px;
+    vertical-align: bottom;
+    margin-top: 38px;
+    text-align: right;
+}
+
+    #soulCount p {
+        font-size: 12px;
+        vertical-align: bottom;
+    }
+
+
+/* User Defined Classes */
+
+/* Remove border around images (for images inside an anchor). Explanation: by default both anchors and images are inline elements 
+   and by applying vertical-align:top; to an image inside an anchor, we move the anchor to the top 
+   of the image. For some reason images have higher z-index than anchors.
+*/
+a img {
+    border: none;
+    vertical-align: top;
+}
+
+.hoverAnimationBackground {
+    transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear; /* FF3.7+ */
+    -o-transition: background-color 0.3s linear; /* Opera 10.5 */
+    -webkit-transition: background-color 0.3s linear; /* Saf3.2+, Chrome */
+}
+
+.hoverAnimationText {
+    transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear; /* FF3.7+ */
+    -o-transition: color 0.3s linear; /* Opera 10.5 */
+    -webkit-transition: color 0.3s linear; /* Saf3.2+, Chrome */
+}
+
+.displayNone {
+    display: none;
+}
+
+/* Navigation */
+/* Main */
+.navigationNodeActive {
+    background-color: #b5121b !important;
+}
+
+#menu {
+    width: 960px;
+    height: 66px;
+    margin: 0px auto 0px auto;
+    list-style: none;
+    display: inline;
+}
+
+    #menu li {
+        float: left;
+        position: relative;
+        min-height: 66px;
+        outline: none;
+        line-height: 65px;
+        padding: 0 22px 0 22px;
+    }
+
+        #menu li img {
+            float: left;
+            margin: 10px 15px 0px 0px;
+        }
+
+        #menu li:hover {
+            background-color: #b5121b;
+        }
+
+    #menu a {
+        float: left;
+        color: White;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+    }
+
+    #menu li:hover > a {
+        color: #fff;
+    }
+
+    *html #menu li a:hover { /* IE6 */
+        color: #fafafa;
+    }
+
+    #menu li:hover > ul {
+        display: block;
+    }
+
+/* Sub-menu */
+#menForMissionNavItem, #hope61NavItem, #eccNavItem {
+    width: 490px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+}
+
+#menForMissionNavItem, #hope61NavItem, #eccNavItem {
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+}
+
+#menForMissionNavItem {
+    background-image: url('../Images/men-for-missions-logo-small.png');
+}
+
+    #menForMissionNavItem:hover {
+        background-image: url('../Images/men-for-missions-logo-white-small.png');
+    }
+
+#hope61NavItem {
+    background-image: url('../Images/hope61-logo-small.png');
+}
+
+    #hope61NavItem:hover {
+        background-image: url('../Images/hope61-logo-white-small-2.png');
+    }
+
+#eccNavItem {
+    background-image: url('../Images/every-community-for-christ-logo-small.png');
+}
+
+    #eccNavItem:hover {
+        background-image: url('../Images/every-community-for-christ-white-logo-small.png');
+    }
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    z-index: 99999;
+    background: #EEEEEE;
+    background: -moz-linear-gradient(#EEEEEE, #BBBBBB);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #BBBBBB),color-stop(1, #EEEEEE));
+    background: -webkit-linear-gradient(#EEEEEE, #BBBBBB);
+    background: -o-linear-gradient(#EEEEEE, #BBBBBB);
+    background: -ms-linear-gradient(#EEEEEE, #BBBBBB);
+    background: linear-gradient(#EEEEEE, #BBBBBB);
+}
+
+    #menu ul li {
+        float: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+        -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+        box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    }
+
+        #menu ul li:last-child {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+    #menu ul a {
+        padding: 10px;
+        min-height: 46px;
+        min-width: 200px;
+        text-wrap: none;
+        line-height: 46px;
+        display: block;
+        float: none;
+        text-transform: none;
+        color: #1e1410;
+        text-shadow: 0 1px 0 #FFF;
+        font-size: 16px;
+        overflow: hidden;
+    }
+
+    #menu ul p {
+        padding-left: 175px;
+    }
+
+    #menu ul a:hover {
+        /*background: #b5121b;*/
+        text-shadow: 0 1px 0 #000;
+        border-top: 1px outset #1e1410;
+    }
+
+    *html #menu ul a { /* IE6 */
+        height: 10px;
+        width: 150px;
+    }
+
+    *:first-child + html #menu ul a { /* IE7 */
+        height: 10px;
+        width: 150px;
+    }
+
+    #menu ul li:first-child a:after {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid #444;
+    }
+
+    #menu ul li:first-child a:hover:after {
+        border-bottom-color: #4C3C31; /* Arrow color */
+    }
+
+/* Clear floated elements */
+#menu:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html #menu {
+    zoom: 1;
+}
+/* IE6 */
+*:first-child + html #menu {
+    zoom: 1;
+}
+/* IE7 */
+
+/* Page Content */
+#contentContainer {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#headerContent {
+    margin: 25px 0 0 0;
+    height: 143px;
+}
+
+#navigationContent {
+    height: 66px;
+    width: 960px;
+    float: left;
+    text-align: left;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+#pageContent {
+    padding: 15px 0 0 0;
+    clear: both;
+}
+
+#divRightContent {
+    float: left;
+    width: 750px;
+}
+
+#footerContent {
+    background: #f4f3f3 url('../Images/footerBkg.gif') repeat-x;
+    width: 100%;
+    font-size: 12px;
+    color: #808080;
+    padding-top: 25px;
+    margin-top: 50px;
+}
+
+#footerContentContainer {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Meto Box */
+.metroBox {
+    width: 305px;
+    height: 285px;
+    float: left;
+    margin-right: 15px;
+    background-color: #231009;
+    /*background-color: #4c3c31;*/
+    color: White;
+    padding: 15px;
+}
+
+    .metroBox img {
+        margin-right: 15px;
+        margin-bottom: 3px;
+    }
+
+    .metroBox:hover {
+        background-color: #b5121b;
+    }
+
+    .metroBox a {
+        color: White;
+        text-decoration: none;
+        outline: none;
+        height: 100%;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .metroBox span {
+        font-size: 22px;
+        display: block;
+        padding-bottom: 10px;
+    }
+
+.nextArrow {
+    background-repeat: no-repeat;
+    background-image: url('../Images/NextArrowWhite.png');
+    background-position: bottom right;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 1px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 15px rgba(0,0,0,0.5);
+}
+
+.stylelessAnchor {
+    text-decoration: none;
+    outline: none;
+}
+
+.stylelessAnchorGray {
+    text-decoration: none;
+    outline: none;
+    color: Gray;
+}
+
+/* Custom button */
+.omsButton {
+    border: 0px;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 15px;
+    background-color: #4c3c31;
+    color: White;
+    border: 1px solid #4c3c31;
+}
+
+    .omsButton:hover {
+        background-color: #b5121b;
+        border: 1px solid #b5121b;
+    }
+
+    .omsButton:active {
+        border: 1px inset White;
+    }
+
+/*TODO:Name this better*/
+div.wrapper {
+    float: left; /* important */
+    position: relative; /* important(so we can absolutely position the description div */
+}
+
+    div.wrapper > p {
+        color: Red;
+        position: relative;
+        z-index: -1;
+    }
+
+div.description {
+    position: absolute; /* absolute position (so we can position it where we want)*/
+    bottom: 0px; /* position will be on bottom */
+    left: 0px;
+    width: 100%;
+    /* styling bellow */
+    background-color: White;
+    font-family: 'tahoma';
+    font-size: 40px;
+    font-weight: bold;
+    color: Black;
+    opacity: 0.6; /* transparency */
+    filter: alpha(opacity=60); /* IE transparency */
+}
+
+p.description_content {
+    padding: 10px;
+    margin: 0px;
+}
+
+/* Navigation Bar */
+
+#navMenu {
+    list-style: none;
+    width: 960px;
+    margin: 0px auto 0px auto;
+    text-indent: 0px;
+    padding-left: 0px;
+    height: 66px;
+}
+
+    #navMenu li {
+        float: left;
+        text-align: center;
+        position: relative;
+        line-height: 65px;
+        height: 66px;
+        border: none;
+        padding: 0 20px 0 20px;
+        text-indent: 0px;
+        z-index: 999;
+    }
+
+        #navMenu li:hover {
+            padding: 0 20px 0 20px;
+            background: #b5121b;
+        }
+
+        #navMenu li a {
+            font-size: 24px;
+            font-weight: bold;
+            color: White;
+            display: inline;
+            outline: 0;
+            text-decoration: none;
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        #navMenu li > a {
+            height: 66px;
+            display: inline-block;
+        }
+
+        #navMenu li:hover a {
+            color: White;
+        }
+
+        #navMenu li .drop {
+            height: 66px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navMenu li:hover .dropDown {
+            left: -1px;
+            top: 66px;
+            margin-top: 0px;
+        }
+
+/* Side navigation Bar */
+
+#sideNavigation, .stickyMenu {
+    float: left;
+    margin: 0px 10px 5px 0px;
+    float: left;
+    width: 199px;
+    border-right: 1px solid #f4f3f3;
+}
+
+    #sideNavigation div {
+        list-style: none;
+        margin: 2px 10px 2px 2px;
+        padding: 7px 20px 2px 2px;
+        border-bottom: 1px dashed Gray;
+        text-align: right;
+        float: right;
+        text-transform: uppercase;
+    }
+
+    #sideNavigation a {
+        text-decoration: none;
+        color: Black;
+        height: 20px;
+        display: inline-block;
+        margin-bottom: 1px;
+    }
+
+        #sideNavigation a:hover {
+            text-decoration: none;
+        }
+
+    #sideNavigation div:hover {
+        border-bottom: 2px solid #b5121b !important;
+        margin-bottom: 1px; /*Account for jump from 1px border to 2px border*/
+        cursor: pointer;
+    }
+
+        #sideNavigation div:hover * {
+            color: #b5121b;
+        }
+
+.sideNavigationActive {
+    border-bottom: 2px solid #b5121b !important;
+    color: #b5121b !important;
+    cursor: pointer;
+    margin-bottom: -1px !important; /*Account for jump from 1px border to 2px border*/
+}
+
+    .sideNavigationActive a {
+        color: #b5121b !important;
+    }
+
+/* Drop Down */
+.dropDown {
+    float: left;
+    position: absolute;
+    left: -999em; /* Hides the drop down */
+    text-align: left;
+    padding: 10px 5px 10px 5px;
+    border: 1px solid #777777;
+    border-top: none;
+    /* Gradient background */
+    background: #F4F4F4;
+    background: -moz-linear-gradient(top, #EEEEEE, #BBBBBB);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#BBBBBB));
+    width: 100%;
+}
+
+.dropDownItem {
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dropDownItemMinistries {
+    width: 540px;
+}
+
+.dropDownItemAboutUs {
+    width: 300px;
+}
+
+.dropDownItem a {
+    color: #4c3c31 !important;
+    font-weight: normal !important;
+}
+
+.dropDownItem:hover a {
+    color: #b5121b !important;
+    font-weight: normal !important;
+    text-shadow: 1px 1px 1px Black !important;
+}
+
+.dropDownItem .zoom {
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.dropDownItem:hover .zoom {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.dropDownItem img { /* Image sticks to the left */
+    width: auto;
+    float: left;
+    margin: 5px 15px 5px 5px;
+    width: 200px;
+}
+
+#navMenu p {
+    line-height: 14px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    text-align: left;
+    text-shadow: 1px 1px 1px White;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}

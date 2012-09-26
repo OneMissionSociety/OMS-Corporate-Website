@@ -1,0 +1,45 @@
+﻿body {
+    background: #fff url('../Images/bodyBkg-Home.gif') repeat-x !important;
+}
+
+.imageWithCaption {
+    float:left;
+    text-align:center;
+}
+
+.imageWithCaption img {
+    margin: 0 20px 10px 20px;
+    width:150px;
+}
+
+.imageWithCaption p {
+    text-align:center;
+    float:right;
+    margin-bottom:20px;
+}
+
+/* Prayer Requests */
+.prayerRequests > div {
+    border-bottom:1px solid LightGray;
+    overflow:hidden;
+    margin-top:10px;
+    margin-left:205px;
+}
+.prayerRequests h4 {
+    float:left;
+}
+.prayerCount {
+    font-size:14px;
+    color: Green;
+    float:right;
+}
+
+.socialDiv {
+    margin-bottom:10px;
+    float:left;
+    cursor:pointer;
+}
+
+.iPrayedDiv {
+    float:right;
+}

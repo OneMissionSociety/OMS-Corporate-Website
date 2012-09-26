@@ -1,0 +1,228 @@
+﻿body {
+    background: #fff url('../Images/bodyBkg.gif') repeat-x;
+    margin:0;
+    padding:0;
+    font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size:100%;
+    color:#4c3c31;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding:0px;
+    margin:0px;
+}
+h1 {
+    font-size:24px;
+}
+h2 {
+    font-size:22px;
+}
+h3 {
+    font-size:18px;
+}
+h4 {
+    font-size:16px;
+}
+
+/* ID specific definitions */
+#headerRight {
+    float:right;
+    margin-right:20px;
+}
+#quickLinks {
+    font-size:.8em;
+    text-align:right;
+}
+#soulCount {
+    font-size:20px;
+    vertical-align:bottom;
+    margin-top:38px;
+    text-align:right;
+}
+#soulCount p {
+    font-size:12px;
+    vertical-align:bottom;
+}
+
+
+/* User Defined Classes */
+
+/* Remove border around images (for images inside an anchor). Explanation: by default both anchors and images are inline elements 
+   and by applying vertical-align:top; to an image inside an anchor, we move the anchor to the top 
+   of the image. For some reason images have higher z-index than anchors.
+*/
+a img {
+    border: none;
+    vertical-align: top;
+}
+.hoverAnimation {
+    transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;    /* FF3.7+ */
+    -o-transition: background-color 0.3s linear;      /* Opera 10.5 */
+    -webkit-transition: background-color 0.3s linear; /* Saf3.2+, Chrome */
+}
+.displayNone {
+    display:none;
+}
+
+/* Navigation */
+.navigationNode {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 65px;
+    padding:0 24px 0 24px;
+    height: 66px;
+    display: inline-block;
+    float:left;
+}
+
+.navigationNode:hover {
+    background-color:#b5121b;
+}
+.navigationNodeActive {
+    background-color:#b5121b;
+}
+
+/* Page Content */
+.contentContainer {
+    width:960px;
+    margin:0 auto;
+    padding:0;
+}
+
+.headerContent {
+    margin: 25px 0 0 0;
+    height: 143px;
+}
+
+.navigationContent {
+    height:55px;
+    margin-bottom:15px;
+}
+
+.pageContent {
+    padding:15px 0 0 0;
+}
+
+.footerContent {
+    background: #f4f3f3 url('../Images/footerBkg.gif') repeat-x;    
+    width:100%;
+    font-size:12px;
+    color:#808080;
+    padding-top:25px;
+    margin-top:50px
+}
+.footerContentContainer {
+    width:960px;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+/* Meto Box */
+.metroBox {
+    width:305px;
+    height:285px;
+    float:left;
+    margin-right:15px;
+    background-color:#b5121b;
+    color:White;
+    padding:15px;
+}
+.metroBox img {   
+    margin-right:15px;
+    margin-bottom:3px;
+}
+.metroBox:hover {
+    background-color:#4c3c31;
+}
+.metroBox a {
+    color:White;
+    text-decoration:none;
+    outline: none;
+    height:100%;
+    width:100%;
+    font-size:15px;
+}
+.metroBox span {
+    font-size:22px;
+    display:block;
+    padding-bottom:10px;
+}
+
+.nextArrow {
+    background-repeat:no-repeat;
+    background-image:url('../Images/NextArrowWhite.png');
+    background-position:bottom right;
+}
+.shadow {
+    -webkit-box-shadow: 0 1px 15px rgba(0,0,0,0.5);  
+    box-shadow: 0 1px 15px rgba(0,0,0,0.5); 
+}
+.stylelessAnchor {
+    text-decoration:none;
+    outline:none;
+}
+.stylelessAnchorGray {
+    text-decoration:none;
+    outline:none;
+    color:Gray;
+}
+
+/* Custom button */
+.omsButton {
+    border:0px;
+    padding:5px 10px 5px 10px;
+    margin-bottom:15px;
+    background-color:#4c3c31;
+    color:White;
+    border: 1px solid #4c3c31;
+}
+.omsButton:hover {
+    background-color:#b5121b;
+    border:1px solid #b5121b;
+}
+.omsButton:active {
+    border: 1px inset White;
+}
+
+
+
+
+/*TODO:Name this better*/
+div.wrapper{
+	float:left; /* important */
+	position:relative; /* important(so we can absolutely position the description div */
+}
+
+div.wrapper > p {
+	color:Red;
+    position:relative;
+    z-index:-1;
+}
+
+div.description{
+	position:absolute; /* absolute position (so we can position it where we want)*/
+	bottom:0px; /* position will be on bottom */
+	left:0px;
+	width:100%;
+	/* styling bellow */
+	background-color:White;
+	font-family: 'tahoma';
+	font-size:40px;
+    font-weight:bold;
+	color:Black ;
+	opacity:0.6; /* transparency */
+	filter:alpha(opacity=60); /* IE transparency */
+}
+p.description_content{
+	padding:10px;
+	margin:0px;
+}
+
+#test {
+    margin:0px;
+    padding:0px;
+}

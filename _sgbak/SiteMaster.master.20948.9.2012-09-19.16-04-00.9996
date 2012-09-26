@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="Images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="contentContainer">
+            <%-- Header Content --%>
+            <uc:SiteHeader runat="server" ID="ucSiteHeader" ClientIDMode="Static" />
+
+            <%-- Navigation Content --%>
+            <uc:SiteNavigation runat="server" ID="ucSiteNavigation" ClientIDMode="Static" />
+
+            <%-- Page Content --%>
+            <div id="pageContent">
+                <asp:ContentPlaceHolder ID="PageContent" runat="server" />
+            </div>
+        </div>
+
+        <%-- Footer Content --%>
+        <uc:SiteFooter runat="server" ID="ucSiteFooter" ClientIDMode="Static" />
+    </form>
+</body>
+</html>
