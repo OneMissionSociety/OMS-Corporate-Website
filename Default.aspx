@@ -109,7 +109,6 @@
             <em>I was first introduced to Men for Missions in the summer of 1972, and in 1973, Dwight Ferguson came to our church for a missions emphasis weekend.  I felt the...</em>
         </a>
     </div>
-    <br style="clear:both" />
     <div id="storyBoxCount">
     </div>
     <br />

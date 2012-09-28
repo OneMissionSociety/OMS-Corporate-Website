@@ -29,10 +29,10 @@
 
 #storyBoxCount {
     float: right;
-    margin-right: 10px;
+    margin: 10px 10px 0 0;
 }
     #storyBoxCount span {
-        color: #b5121b;
+        color: #9C1C1F;
     }
     #storyBoxCount a {
         outline: none;
@@ -44,7 +44,7 @@
     height: 285px;
     float: left;
     margin-right: 15px;
-    background-color: #b5121b;
+    background-color: #9C1C1F;
     color: White;
     text-align: justify;
 }
@@ -54,7 +54,7 @@
         height: 270px;
         padding: 0 15px 15px 15px;
         color: #fff;
-        background-color: #b5121b;
+        background-color: #9C1C1F;
     }
         .pictureBox .pictureBoxDescription h2 {
             font-size:30px !important;

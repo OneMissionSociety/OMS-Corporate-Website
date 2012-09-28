@@ -1,3 +1,40 @@
 ﻿body {
     background: #fff url('../Images/bodyBkg-Home.gif') repeat-x !important;
 }
+
+input[type=text], input[type=email] {
+    width: 225px;
+}
+
+td {
+    min-width: 50px;
+}
+
+.floatLeft {
+    float: left;
+}
+
+#questionComments {
+    float: right;
+    margin-top:-17px;
+}
+
+#submitButton {
+    clear:both; 
+    margin-top:47px;
+}
+
+#divGeneralContact {
+    float: left;
+    width: 250px;
+    height: 235px;
+    margin-top:10px;
+}
+
+#divEmailUs {
+    float: left;
+    width: 620px;
+    height: 235px;
+    margin-bottom:65px;
+    margin-top:10px;
+}

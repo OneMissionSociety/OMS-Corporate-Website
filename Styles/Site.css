@@ -4,7 +4,7 @@
     padding: 0;
     font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
     font-size: 16px;
-    color: #4c3c31;
+    color: #231009;
 }
 
 p {
@@ -13,22 +13,53 @@ p {
 
 li {
     margin-bottom: 15px;
-    color: #b5121b;
+    color: #9C1C1F;
 }
 
     li span {
-        color: #4c3c31;
+        color: #231009;
     }
 
 h1, h2, h3, h4, h5, h6 {
     padding: 0px;
-    margin: 0px;
+    margin: 0 0 15px 0;
 }
 
-h1 { font-size: 24px; }
-h2 { font-size: 22px; }
-h3 { font-size: 18px; }
-h4 { font-size: 16px; }
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+/* Custom button */
+input[type=button], input[type=submit], button {
+    border: 0px;
+    padding: 7px 10px 7px 10px;
+    margin-bottom: 15px;
+    background-color: #231009;
+    border: 1px solid #231009 !important;
+    color: White;
+}
+
+    input[type=button]:hover, input[type=submit]:hover, button:hover {
+        background-color: #9C1C1F;
+        border: 1px solid DarkGray !important;
+    }
+
+    input[type=button]:active, input[type=submit]:active, button:active {
+        background-color: #3D3D3D !important;
+        border: 1px inset DarkGray !important;
+    }
 
 /* ID specific definitions */
 #headerRight {
@@ -86,7 +117,7 @@ a img {
 /* Navigation */
 /* Main */
 .navigationNodeActive {
-    background-color: #b5121b !important;
+    background-color: #9C1C1F !important;
 }
 
 #menu {
@@ -112,7 +143,7 @@ a img {
         }
 
         #menu li:hover {
-            background-color: #b5121b;
+            background-color: #9C1C1F;
         }
 
     #menu a {
@@ -218,7 +249,7 @@ a img {
         display: block;
         float: none;
         text-transform: none;
-        color: #1e1410;
+        color: #231009;
         text-shadow: 0 1px 0 #FFF;
         font-size: 16px;
         overflow: hidden;
@@ -229,9 +260,9 @@ a img {
     }
 
     #menu ul a:hover {
-        /*background: #b5121b;*/
+        /*background: #9C1C1F;*/
         text-shadow: 0 1px 0 #000;
-        border-top: 1px outset #1e1410;
+        border-top: 1px outset #231009;
     }
 
     *html #menu ul a { /* IE6 */
@@ -257,7 +288,7 @@ a img {
     }
 
     #menu ul li:first-child a:hover:after {
-        border-bottom-color: #4C3C31; /* Arrow color */
+        border-bottom-color: #231009; /* Arrow color */
     }
 
 /* Clear floated elements */
@@ -301,7 +332,7 @@ a img {
 }
 
 #pageContent {
-    padding: 15px 0 0 0;
+    padding: 5px 0 0 0;
     clear: both;
 }
 
@@ -332,7 +363,6 @@ a img {
     float: left;
     margin-right: 15px;
     background-color: #231009;
-    /*background-color: #4c3c31;*/
     color: White;
     padding: 15px;
 }
@@ -343,8 +373,21 @@ a img {
     }
 
     .metroBox:hover {
-        background-color: #b5121b;
+        background-color: #9C1C1F;
     }
+
+    .metroBox input[type=button], input[type=submit], button {
+        background-color: #9C1C1F !important;
+    }
+
+    .metroBox:hover input[type=button], input[type=submit], button {
+        background-color: #231009 !important;
+    }
+
+        .metroBox:hover input[type=button]:active, input[type=submit]:active, button:active {
+            background-color: #3D3D3D !important;
+            border: 1px inset DarkGray !important;
+        }
 
     .metroBox a {
         color: White;
@@ -382,25 +425,6 @@ a img {
     outline: none;
     color: Gray;
 }
-
-/* Custom button */
-.omsButton {
-    border: 0px;
-    padding: 5px 10px 5px 10px;
-    margin-bottom: 15px;
-    background-color: #4c3c31;
-    color: White;
-    border: 1px solid #4c3c31;
-}
-
-    .omsButton:hover {
-        background-color: #b5121b;
-        border: 1px solid #b5121b;
-    }
-
-    .omsButton:active {
-        border: 1px inset White;
-    }
 
 /*TODO:Name this better*/
 div.wrapper {
@@ -459,7 +483,7 @@ p.description_content {
 
         #navMenu li:hover {
             padding: 0 20px 0 20px;
-            background: #b5121b;
+            background: #9C1C1F;
         }
 
         #navMenu li a {
@@ -526,24 +550,24 @@ p.description_content {
         }
 
     #sideNavigation div:hover {
-        border-bottom: 2px solid #b5121b !important;
+        border-bottom: 2px solid #9C1C1F !important;
         margin-bottom: 1px; /*Account for jump from 1px border to 2px border*/
         cursor: pointer;
     }
 
         #sideNavigation div:hover * {
-            color: #b5121b;
+            color: #9C1C1F;
         }
 
 .sideNavigationActive {
-    border-bottom: 2px solid #b5121b !important;
-    color: #b5121b !important;
+    border-bottom: 2px solid #9C1C1F !important;
+    color: #9C1C1F !important;
     cursor: pointer;
     margin-bottom: -1px !important; /*Account for jump from 1px border to 2px border*/
 }
 
     .sideNavigationActive a {
-        color: #b5121b !important;
+        color: #9C1C1F !important;
     }
 
 /* Drop Down */
@@ -579,12 +603,12 @@ p.description_content {
 }
 
 .dropDownItem a {
-    color: #4c3c31 !important;
+    color: #231009 !important;
     font-weight: normal !important;
 }
 
 .dropDownItem:hover a {
-    color: #b5121b !important;
+    color: #9C1C1F !important;
     font-weight: normal !important;
     text-shadow: 1px 1px 1px Black !important;
 }
