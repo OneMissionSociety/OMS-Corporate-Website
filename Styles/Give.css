@@ -1,0 +1,13 @@
+﻿body {
+    background: #fff url('../Images/bodyBkg-Home.gif') repeat-x !important;
+}
+
+#pbPray {
+    width: 275px !important;
+    height: 255px !important;
+    float:left;
+}
+
+#pbPray:hover li {
+    color: #231009;
+}

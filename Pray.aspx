@@ -20,8 +20,11 @@
         elit. Maecenas eget enim a nisl eleifend suscipit vel id libero. Quisque rhoncus dapibus velit, quis fringilla 
         enim pellentesque et. In porta massa et elit congue eget blandit massa lobortis. Nulla eget erat in ante.
     </p>
-    <br />
-    <em style="font-size:14px">Rejoice always, <strong>pray without ceasing</strong>, in everything give thanks; for this is the will of God in Christ Jesus for you. 1 Thessalonians 5 (NKJV)</em>
+    <blockquote class="scripture">
+        <a href="http://bible.us/1thess5.16-18.nkjv" target="_blank">
+            Rejoice always, <strong>pray without ceasing</strong>, in everything give thanks; for this is the will of God in Christ Jesus for you. 1 Thessalonians 5:16-18 (NKJV)
+        </a>
+    </blockquote>
     <br style="clear:both" />
     <br /><br />
     <h2>Wall of Prayer</h2>

@@ -38,24 +38,3 @@
         outline: none;
         text-decoration: none;
     }
-
-.pictureBox {
-    width: 305px;
-    height: 285px;
-    float: left;
-    margin-right: 15px;
-    background-color: #9C1C1F;
-    color: White;
-    text-align: justify;
-}
-    .pictureBox .pictureBoxDescription {
-        position: absolute;
-        width: 275px;
-        height: 270px;
-        padding: 0 15px 15px 15px;
-        color: #fff;
-        background-color: #9C1C1F;
-    }
-        .pictureBox .pictureBoxDescription h2 {
-            font-size:30px !important;
-        }

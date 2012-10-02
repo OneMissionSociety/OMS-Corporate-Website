@@ -110,6 +110,29 @@ a img {
     -webkit-transition: color 0.3s linear; /* Saf3.2+, Chrome */
 }
 
+/*.scripture {
+    font-size: 14px !important;
+    font-style: italic;
+    margin-top: 25px;
+    background-color: #F9F9F9;
+    padding: 10px;
+    border: 1px solid #E8E8E8;
+    text-decoration: none;
+    min-width:100px;
+}
+
+.noBackground {
+    background: none !important;
+}
+.noBorder {
+    border: none !important;
+}
+
+.scripture a {
+    text-decoration: none;
+    color: #231009;
+}*/
+
 .displayNone {
     display: none;
 }
@@ -427,6 +450,29 @@ a img {
 }
 
 /*TODO:Name this better*/
+.pictureBox {
+    width: 305px;
+    height: 285px;
+    float: left;
+    margin-right: 15px;
+    background-color: #9C1C1F;
+    color: White;
+    text-align: justify;
+}
+
+    .pictureBox .pictureBoxDescription {
+        position: absolute;
+        width: 275px;
+        height: 270px;
+        padding: 0 15px 15px 15px;
+        color: #fff;
+        background-color: #9C1C1F;
+    }
+
+        .pictureBox .pictureBoxDescription h2 {
+            font-size: 30px !important;
+        }
+
 div.wrapper {
     float: left; /* important */
     position: relative; /* important(so we can absolutely position the description div */
@@ -651,3 +697,44 @@ p.description_content {
 .italic {
     font-style: italic;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+blockquote.scripture:before {
+    float: left;
+    margin: 5px 15px 0 0;
+    /*margin-top:20px;*/ /*IE*/
+    font-size: 90px; /* let's make it a big quote! */
+    content: '\201C'; /* here we define our :before as a smart quote. It could be any content, even the HTML entity alternative to this opening quote, that is “ */
+    color: #9C1C1F;
+    text-shadow: 0 1px 1px #909090;
+}
+blockquote.scripture {
+  font: 14px/20px italic Times, serif;
+  padding: 8px 0 8px 0;
+  border-top: 1px dashed #E8E8E8;
+  border-bottom: 1px dashed #E8E8E8;
+  margin: 25px 0 0 0;
+  background-position: top left;
+  background-repeat: no-repeat;
+  }
+  blockquote.scripture a {
+    	text-decoration: none;
+        color: #231009
+  	}
+

@@ -2,7 +2,7 @@
 
 <ul id="menu">
     <li class="hoverAnimationBackground" id="navHome" runat="server"><a href="default.aspx">Home</a></li>
-    <li class="hoverAnimationBackground" id="navGive" runat="server"><a href="#">Give</a></li>
+    <li class="hoverAnimationBackground" id="navGive" runat="server"><a href="give.aspx">Give</a></li>
     <li class="hoverAnimationBackground" id="navGo" runat="server"><a href="#">Go</a></li>
     <li class="hoverAnimationBackground" id="navPray" runat="server"><a href="pray.aspx">Pray</a></li>
 
