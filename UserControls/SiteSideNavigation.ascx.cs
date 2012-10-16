@@ -33,13 +33,21 @@ public partial class UserControls_SiteSideNavigation : System.Web.UI.UserControl
         switch (pageParent)
         {
             case ApplicationLogic.TopLevelNavigation.AboutUs:
-                sideNavItems.Add(new BusinessLogic.SideNavigationItem("navWhoIsOMS", "aboutus.aspx", "Who is OMS", false));
-                sideNavItems.Add(new BusinessLogic.SideNavigationItem("navWhereWeServe", "#", "Where we Serve", false));
-                sideNavItems.Add(new BusinessLogic.SideNavigationItem("navOmsHistory", "#", "OMS History", false));
-                sideNavItems.Add(new BusinessLogic.SideNavigationItem("navArticlesOfFaith", "articlesoffaith.aspx", "Articles of Faith", false));
-                sideNavItems.Add(new BusinessLogic.SideNavigationItem("BoardOfTrustees", "#", "Board of Trustees", false));
+                sideNavItems.Add(new BusinessLogic.SideNavigationItem("navWhoIsOMS", "aboutus.aspx", "Who is OMS", "/about-us", false));
+                sideNavItems.Add(new BusinessLogic.SideNavigationItem("navWhereWeServe", "whereweserve.aspx", "Where we Serve", "/where-we-serve", false));
+                sideNavItems.Add(new BusinessLogic.SideNavigationItem("navOmsHistory", "#", "OMS History", "/one-mission-society-history", false));
+                sideNavItems.Add(new BusinessLogic.SideNavigationItem("navArticlesOfFaith", "articlesoffaith.aspx", "Articles of Faith", "/articles-of-faith", false));
+                sideNavItems.Add(new BusinessLogic.SideNavigationItem("BoardOfTrustees", "#", "Board of Trustees", "/board-of-trustees", false));
 
-                sideNavItems.First(x => x.URL == url).IsActive = true;
+                sideNavItems.First(x => x.URL == url || x.SeoAlias == url).IsActive = true;
+                break;
+            case ApplicationLogic.TopLevelNavigation.Give:
+                sideNavItems.Add(new BusinessLogic.SideNavigationItem("navGiveToOMS", "Give.aspx", "Give to OMS", "/give", false));
+                sideNavItems.Add(new BusinessLogic.SideNavigationItem("navGiveToAProject", "project.aspx", "Give to a Project", "/give/projects", false));
+                sideNavItems.Add(new BusinessLogic.SideNavigationItem("navGiveToAMissionary", "#", "Give to a Missionary", "/give/missionary", false));
+
+                var activeNode = sideNavItems.FirstOrDefault(x => x.URL == url || x.SeoAlias == url);
+                if (activeNode != null) activeNode.IsActive = true;
                 break;
         }
 

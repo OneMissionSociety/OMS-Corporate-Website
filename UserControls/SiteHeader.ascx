@@ -3,7 +3,7 @@
 <div id="headerContent">
     <%-- OMS Logo --%>
     <a href="default.aspx" rel="One Mission Soceity homepage">
-        <img src="Images/One-Mission-Society-Logo.png" alt="One Mission Society Logo" />
+        <img src="<%= ResolveClientUrl("~/Images/One-Mission-Society-Logo.png") %>" alt="One Mission Society Logo" />
     </a>
     <div id="headerRight">
         <div id="quickLinks">

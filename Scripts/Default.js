@@ -90,22 +90,3 @@ function SetStoryToggleInterval() {
     var interval = setInterval(ToggleStory, 7000);
     return interval;
 }
-
-function ShowPictureBoxDescription(target) {
-    // If being invoked from hoverIntent, set target
-    if (target.target)
-        target = target.target;
-
-    // Fade in all wrappers before fading out the next one
-    $(".wrapper").fadeIn("slow");
-
-    // Target
-    var $target = $(target);
-
-    // Fade out target wrapper
-    $target.closest(".wrapper").fadeOut("slow");
-}
-function HidePictureBoxDescription(args) {
-    //if($(args.target).hasClass("pictureBoxDescription"))
-    $(".wrapper").fadeIn("slow");
-}

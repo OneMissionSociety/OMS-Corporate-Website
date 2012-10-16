@@ -22,7 +22,7 @@
                 neque nisl tempor libero, sed. 
                 </p>
             </div>
-            <div class='wrapper'>
+            <div class='wrapper dogEar'>
                 <img src="Images/Give.jpg" alt="Support world missions by giving image" />
                 <div class='description'>
                     <p class='description_content'>GIVE</p>
@@ -43,7 +43,7 @@
                 neque nisl tempor libero, sed. 
                 </p>
             </div>
-            <div class='wrapper'>
+            <div class='wrapper dogEar'>
                 <img src="Images/Go.jpg" alt="Support world missions by going image" />
                 <div class='description'>
                     <p class='description_content'>GO</p>
@@ -54,7 +54,7 @@
 
     <%-- Pray --%>
     <div id="pbPray" class="pictureBox shadow">
-        <a href="Pray.aspx">
+        <a href="pray-for-missions">
             <div class="pictureBoxDescription nextArrow">
                 <h2>PRAY</h2>
                 <p>
@@ -64,7 +64,7 @@
                 </p>
             </div>
 
-            <div class='wrapper'>
+            <div class='wrapper dogEar'>
                 <img src="Images/Pray.jpg" alt="Support world missions by praying image" />
                 <div class='description'>
                     <p class='description_content'>PRAY</p>

@@ -5,7 +5,7 @@
         <asp:Repeater ID="rptSideNavigation" runat="server">
             <ItemTemplate>
                 <div class="<%# SetActiveClass(Eval("IsActive").ToString()) %> hoverAnimationText" id="<%# DataBinder.Eval(Container.DataItem, "NavNodeID") %>">
-                    <a class="hoverAnimationText" href="<%# DataBinder.Eval(Container.DataItem, "URL") %>"><%# DataBinder.Eval(Container.DataItem, "NavNodeText") %></a>
+                    <a class="hoverAnimationText" href="<%# DataBinder.Eval(Container.DataItem, "SeoAlias") %>"><%# DataBinder.Eval(Container.DataItem, "NavNodeText") %></a>
                 </div>
                 <br style="clear: both" />
             </ItemTemplate>

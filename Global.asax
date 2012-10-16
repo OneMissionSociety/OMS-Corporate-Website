@@ -20,27 +20,16 @@
 
     void RegisterRoutes(RouteCollection routes)
     {
-        routes.Add(new Route("Images/", new StopRoutingHandler()));
-            
-        routes.MapPageRoute(
-          "MissionaryPURL",
-          "{MissionaryPURL}",
-          "~/Missionary.aspx"
-       );
-
-        //routes.MapPageRoute(
-        //   "Articles of Faith",      // Route name
-        //   "articles-of-faith",      // Route URL
-        //   "~/ArticlesOfFaith.aspx" // Web page to handle route
-        //);
-
-       // routes.MapPageRoute(
-       //   "PrayerMinistryWallOfPrayer",
-       //   "prayer-ministry/wall-of-prayer",
-       //   "~/Pray.aspx"
-       //);
-
-        routes.Add(new Route("Images/", new StopRoutingHandler()));
+        routes.Add(new Route("Images/", new StopRoutingHandler()));   
+        routes.Add("PrayRoute", new Route("pray-for-missions", new PageRouteHandler("~/pray.aspx")));
+        routes.Add("GiveRoute", new Route("give", new PageRouteHandler("~/give.aspx")));
+        routes.Add("AboutUsRoute", new Route("about-us", new PageRouteHandler("~/aboutus.aspx")));
+        routes.Add("WhereWeServeRoute", new Route("where-we-serve", new PageRouteHandler("~/whereweserve.aspx")));
+        routes.Add("ArticlesOfFaith", new Route("articles-of-faith", new PageRouteHandler("~/articlesoffaith.aspx")));
+        routes.Add("ContactUsRoute", new Route("contact-us", new PageRouteHandler("~/contactus.aspx")));
+        routes.Add("ProjectRoute", new Route("give/projects", new PageRouteHandler("~/project.aspx")));
+        routes.Add("SpecificProjectRoute", new Route("give/projects/{ID}", new PageRouteHandler("~/project.aspx")));
+        
     }
     
     void Application_End(object sender, EventArgs e) { //  Code that runs on application shutdown

@@ -361,7 +361,7 @@ a img {
 
 #divRightContent {
     float: left;
-    width: 750px;
+    width: 730px;
 }
 
 #footerContent {
@@ -569,7 +569,7 @@ p.description_content {
     float: left;
     margin: 0px 10px 5px 0px;
     float: left;
-    width: 199px;
+    width: 215px;
     border-right: 1px solid #f4f3f3;
 }
 
@@ -698,23 +698,6 @@ p.description_content {
     font-style: italic;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 blockquote.scripture:before {
     float: left;
     margin: 5px 15px 0 0;
@@ -738,3 +721,56 @@ blockquote.scripture {
         color: #231009
   	}
 
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+.dogEar:before {
+   content:"";
+   position:absolute;
+   top:0;
+   right:0;
+   border-width:0 16px 16px 0;
+   border-style:solid;
+   border-color:#9C1C1F #9C1C1F #e0d8d5 #e0d8d5;
+   background:#9C1C1F;
+   -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   display:block; width:0; /* Firefox 3.0 damage limitation */
+}
+
+.dogEar.rounded {
+   -webkit-border-radius:5px 0 5px 5px;
+   -moz-border-radius:5px 0 5px 5px;
+   border-radius:5px 0 5px 5px;
+}
+
+.dogEar.rounded:before {
+   border-width:8px;
+   border-color:#fff #fff transparent transparent;
+   -webkit-border-bottom-left-radius:5px;
+   -moz-border-radius:0 0 0 5px;
+   border-radius:0 0 0 5px;
+}
+  
+  

@@ -1,0 +1,24 @@
+﻿.project {
+    margin-top:40px;
+}
+    .project img {
+        width: 150px;
+        height: 150px;
+    }
+    .project p {
+        margin: 0px;
+        padding :0px;
+    }
+    .project a {
+        text-decoration: none;
+    }
+.projectImageHolder {
+    float:left;
+}
+.projectDescription {
+    float:left;
+    margin-left: 15px;
+    margin-top:0px;
+    padding-top:0px;
+    width:565px;
+}

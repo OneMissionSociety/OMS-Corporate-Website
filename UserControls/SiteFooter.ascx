@@ -6,8 +6,8 @@
             <a href="default.aspx">Home</a> | 
                 <a href="#">Give</a> | 
                 <a href="#">Go</a> | 
-                <a href="pray.aspx">Pray</a> | 
-                <a href="aboutus.aspx">About Us</a> | 
+                <a href="pray-for-missions">Pray</a> | 
+                <a href="about-us">About Us</a> | 
                 <a href="#">Contact Us</a>
             <br />
             <br />

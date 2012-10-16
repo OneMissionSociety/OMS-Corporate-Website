@@ -3,7 +3,7 @@
 
 <%-- Head Content --%>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
-    <meta name="keywords" content="wall of prayer, prayer ministry, pray for missions, pray without ceasing" />
+    <meta name="keywords" content="pray for missions, wall of prayer, prayer ministry, pray without ceasing" />
     <link rel="stylesheet" type="text/css" href="<%: ResolveUrl(MyStyleBundler.RenderPageSpecificStyle(Page.AppRelativeVirtualPath)) %>" />
     <script src="<%: ResolveUrl(MyScriptBundler.RenderPageSpecificScript(Page.AppRelativeVirtualPath)) %>"></script>
 </asp:Content>

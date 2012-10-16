@@ -15,7 +15,7 @@ public partial class SiteMasterSideNav : System.Web.UI.MasterPage
 
         // Set top level navigation
         ucSiteNavigation.SetTopLevelNavigation(this.TopLevelNavigation);
-        ucSideSiteNavigation.LoadSideNavigationItems(this.TopLevelNavigation, Path.GetFileName(Request.PhysicalPath));
+        ucSideSiteNavigation.LoadSideNavigationItems(this.TopLevelNavigation, Request.Path.Replace("/OmsCorporate/", String.Empty));
     }
 
     public ApplicationLogic.TopLevelNavigation TopLevelNavigation { get; set; }

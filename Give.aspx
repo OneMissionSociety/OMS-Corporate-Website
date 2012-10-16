@@ -9,7 +9,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="PageContent" runat="Server">
     <%-- Give --%>
     <div class="pictureBox shadow">
-        <a href="#">
+        <a href="give/projects">
             <div class="pictureBoxDescription nextArrow">
                 <h2>Project</h2>
                 <p>
@@ -19,7 +19,7 @@
                 neque nisl tempor libero, sed. 
                 </p>
             </div>
-            <div class='wrapper'>
+            <div class='wrapper dogEar'>
                 <img src="Images/Give.jpg" alt="Support world missions by giving image" />
                 <div class='description'>
                     <p class='description_content'>Project</p>
@@ -40,7 +40,7 @@
                 neque nisl tempor libero, sed. 
                 </p>
             </div>
-            <div class='wrapper'>
+            <div class='wrapper dogEar'>
                 <img src="Images/Go.jpg" alt="Support world missions by going image" />
                 <div class='description'>
                     <p class='description_content'>Missionary</p>
