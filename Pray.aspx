@@ -52,7 +52,7 @@
                     <img src="Images/SocialNetworkingPlaceholder.png" />
                 </div>
                 <div class="iPrayedDiv">
-                    <input type="button" class="omsButton hoverAnimationBackground" value="I prayed!" />
+                    <input type="button" class="iPrayedButton hoverAnimationBackground" value="I prayed!" />
                 </div>
             </div>
             <div>
@@ -64,7 +64,7 @@
                     <img src="Images/SocialNetworkingPlaceholder.png" />
                 </div>
                 <div class="iPrayedDiv">
-                    <input type="button" class="omsButton hoverAnimationBackground" value="I prayed!" />
+                    <input type="button" class="iPrayedButton hoverAnimationBackground" value="I prayed!" />
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
                     <img src="Images/SocialNetworkingPlaceholder.png" />
                 </div>
                 <div class="iPrayedDiv">
-                    <input type="button" class="omsButton hoverAnimationBackground" value="I prayed!" />
+                    <input type="button" class="iPrayedButton hoverAnimationBackground" value="I prayed!" />
                 </div>
             </div>
             <div>
@@ -108,7 +108,7 @@
                     <img src="Images/SocialNetworkingPlaceholder.png" />
                 </div>
                 <div class="iPrayedDiv">
-                    <input type="button" class="omsButton hoverAnimationBackground" value="I prayed!" />
+                    <input type="button" class="iPrayedButton hoverAnimationBackground" value="I prayed!" />
                 </div>
             </div>
             <div>
@@ -122,7 +122,7 @@
                     <img src="Images/SocialNetworkingPlaceholder.png" />
                 </div>
                 <div class="iPrayedDiv">
-                    <input type="button" class="omsButton hoverAnimationBackground" value="I prayed!" />
+                    <input type="button" class="iPrayedButton hoverAnimationBackground" value="I prayed!" />
                 </div>
             </div>
         </div>
@@ -152,7 +152,7 @@
                     <img src="Images/SocialNetworkingPlaceholder.png" />
                 </div>
                 <div class="iPrayedDiv">
-                    <input type="button" class="omsButton hoverAnimationBackground" value="I prayed!" />
+                    <input type="button" class="iPrayedButton hoverAnimationBackground" value="I prayed!" />
                 </div>
             </div>
             <div>
@@ -164,7 +164,7 @@
                     <img src="Images/SocialNetworkingPlaceholder.png" />
                 </div>
                 <div class="iPrayedDiv">
-                    <input type="button" class="omsButton hoverAnimationBackground" value="I prayed!" />
+                    <input type="button" class="iPrayedButton hoverAnimationBackground" value="I prayed!" />
                 </div>
             </div>
         </div>

@@ -28,7 +28,7 @@ public class MyStyleBundler
         var bundle = BundleTable.Bundles.GetBundleFor(bundleName);
         if (bundle == null)
         {
-            bundle = new StyleBundle(bundleName).Include("~/styles/site.css", "~/styles/" + pageName + ".css");
+            bundle = new StyleBundle(bundleName).Include("~/styles/site.css", "~/styles/qtip.css", "~/styles/" + pageName + ".css");
             BundleTable.Bundles.Add(bundle);
         }
         

@@ -30,12 +30,13 @@ public class MyScriptBundler
     {
         var bundleName = "~/scripts/" + pageName;
         var bundle = BundleTable.Bundles.GetBundleFor(bundleName);
-        if (bundle == null)
+        //if (bundle == null)
         {
             bundle = new ScriptBundle(bundleName).Include("~/scripts/jquery-{version}.js",
                 "~/scripts/jquery-ui-{version}.js",
-                "~/scripts/hoverIntent.js",
                 "~/scripts/jquery.sticky.js",
+                "~/scripts/qtip.js",
+                "~/scripts/hoverIntent.js",
                 "~/scripts/site.js",
                 "~/scripts/" + pageName + ".js");
 

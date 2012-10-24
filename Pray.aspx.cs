@@ -13,6 +13,6 @@ public partial class Pray : System.Web.UI.Page
         Page.Title = "Prayer Ministry | Wall of Prayer | Pray without ceasing";
 
         // Set top level navigation
-        Master.TopLevelNavigation = ApplicationLogic.TopLevelNavigation.Pray;
+        Master.TopLevelNavigation = Utilities.TopLevelNavigation.Pray;
     }
 }

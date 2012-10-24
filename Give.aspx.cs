@@ -9,6 +9,6 @@ public partial class Give : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Master.TopLevelNavigation = ApplicationLogic.TopLevelNavigation.Give;
+        Master.TopLevelNavigation = Utilities.TopLevelNavigation.Give;
     }
 }

@@ -13,6 +13,6 @@ public partial class AboutUs : System.Web.UI.Page
         Page.Title = "About Us";
 
         // Set top level navigation
-        Master.TopLevelNavigation = ApplicationLogic.TopLevelNavigation.AboutUs;
+        Master.TopLevelNavigation = Utilities.TopLevelNavigation.AboutUs;
     }
 }

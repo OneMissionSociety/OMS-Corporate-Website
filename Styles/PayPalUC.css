@@ -1,0 +1,10 @@
+﻿#txtGiftAmount {
+    width: 65px !important;
+}
+#saveExplanation {
+    display:none;
+    float:right;
+}
+input[type=button], input[type=submit] {
+    min-width: 75px;
+}

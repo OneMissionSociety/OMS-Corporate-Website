@@ -13,6 +13,6 @@ public partial class WhereWeServe : System.Web.UI.Page
         Page.Title = "Where We Serve";
 
         // Set top level navigation
-        Master.TopLevelNavigation = ApplicationLogic.TopLevelNavigation.AboutUs;
+        Master.TopLevelNavigation = Utilities.TopLevelNavigation.AboutUs;
     }
 }

@@ -4,8 +4,10 @@
     <div id="sideNavigation">
         <asp:Repeater ID="rptSideNavigation" runat="server">
             <ItemTemplate>
-                <div class="<%# SetActiveClass(Eval("IsActive").ToString()) %> hoverAnimationText" id="<%# DataBinder.Eval(Container.DataItem, "NavNodeID") %>">
-                    <a class="hoverAnimationText" href="<%# DataBinder.Eval(Container.DataItem, "SeoAlias") %>"><%# DataBinder.Eval(Container.DataItem, "NavNodeText") %></a>
+                <div class="<%# SetActiveClass(Eval("IsActive").ToString()) %> <%# SetContextualClass(Eval("IsContextualLink").ToString()) %> hoverAnimationText" id="<%# DataBinder.Eval(Container.DataItem, "NavNodeID") %>">
+                    <a onclick="<%# Eval("OnClickJS") %>" class="hoverAnimationText" href="<%# Eval("SeoAlias") %>">
+                        <%# Eval("NavNodeText") %>
+                    </a>
                 </div>
                 <br style="clear: both" />
             </ItemTemplate>

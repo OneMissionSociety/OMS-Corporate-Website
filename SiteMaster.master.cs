@@ -7,7 +7,7 @@ using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
-public partial class SiteMaster : System.Web.UI.MasterPage
+public partial class SiteMaster : BaseMasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -19,5 +19,5 @@ public partial class SiteMaster : System.Web.UI.MasterPage
         ucSiteNavigation.SetTopLevelNavigation(this.TopLevelNavigation);
     }
 
-    public ApplicationLogic.TopLevelNavigation TopLevelNavigation { get; set; }
+    public Utilities.TopLevelNavigation TopLevelNavigation { get; set; }
 }

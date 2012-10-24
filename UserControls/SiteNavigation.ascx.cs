@@ -8,9 +8,20 @@ using System.Web.UI.WebControls;
 
 public partial class UserControls_SiteNavigation : System.Web.UI.UserControl
 {
-    protected void Page_Load(object sender, EventArgs e) { }
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        var donations = BusinessLogic.Donation.GetDonations();
+        if (donations != null && donations.Count > 0)
+        {
+            donationCountBubble.InnerHtml = donations.Count().ToString();
+        }
+        else
+        {
+            donationCountBubble.Visible = false;
+        }
+    }
 
-    public void SetTopLevelNavigation(ApplicationLogic.TopLevelNavigation topLevelNavigation)
+    public void SetTopLevelNavigation(Utilities.TopLevelNavigation topLevelNavigation)
     {
         HtmlGenericControl link = (HtmlGenericControl)this.FindControl("nav" + topLevelNavigation.ToString());
         link.Attributes["class"] += " navigationNodeActive";

@@ -6,15 +6,15 @@
     <script src="<%: ResolveUrl(MyScriptBundler.RenderPageSpecificScript(Page.AppRelativeVirtualPath)) %>"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="PageContent" runat="Server">
-    <%-- Project List Container (shown when project ID is not specified --%>
+    <%-- Project List Container (shown when project ID is not specified) --%>
     <div id="projectListContainer" runat="server">
         <h1>Give to a Project
         </h1>
         <p id="test" runat="server">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et dapibus lectus. Ut ipsum dolor, volutpat sit amet laoreet in, cursus in dui. 
-        Curabitur quis tempor lectus. Vivamus congue lorem a odio laoreet consectetur. Nulla facilisi. Aliquam erat volutpat. Aenean id sapien ipsum, id pharetra massa. 
-        Quisque eget risus vitae nisl hendrerit pulvinar vel nec nisi. Aliquam sed tincidunt magna. Etiam rutrum, est vitae bibendum imperdiet, massa eros venenatis ipsum, 
-        eget lobortis nunc massa non urna.
+            Curabitur quis tempor lectus. Vivamus congue lorem a odio laoreet consectetur. Nulla facilisi. Aliquam erat volutpat. Aenean id sapien ipsum, id pharetra massa. 
+            Quisque eget risus vitae nisl hendrerit pulvinar vel nec nisi. Aliquam sed tincidunt magna. Etiam rutrum, est vitae bibendum imperdiet, massa eros venenatis ipsum, 
+            eget lobortis nunc massa non urna.
         </p>
         <asp:Repeater ID="projectRepeater" runat="server">
             <ItemTemplate>
@@ -23,7 +23,7 @@
                     </div>
                     <div class="projectDescription">
                         <h2>
-                            <%# Eval("ProjectName").ToString() %>
+                            <a href="/give/projects/<%# Eval("SeoURL").ToString() %>"><%# Eval("ProjectName").ToString() %></a>
                         </h2>
                         <p>
                             <%# Eval("ShortDescription").ToString() %>&nbsp;<a href="/give/projects/<%# Eval("SeoURL").ToString() %>">Read more...</a>
@@ -37,7 +37,18 @@
 
     <%-- Project Information --%>
     <div id="fullProjectInformation" runat="server">
-        <h1 id="projectName" runat="server"></h1>
-        <p id="projectDescription" runat="server"></p>
+        <%-- Slideshow --%>
+        <uc:TN3 ID="ucprojectImages" runat="server" />
+        <br style="clear:both" />
+
+        <%-- Project Information --%>
+        <h1><%= selectedProject.ProjectName %></h1>
+        <div><%= selectedProject.Description %></div>
+
+        <%-- Prayer Requests / Current Opportunities / Donate --%>
+        <h2>Give to <%= selectedProject.ProjectName %></h2>
+        <div id="payPalContainer">
+            <uc:PayPal ID="ucPayPal" runat="server" Project="<%# selectedProject %>" />
+        </div>
     </div>
 </asp:Content>

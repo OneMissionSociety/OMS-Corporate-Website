@@ -14,6 +14,6 @@ public partial class _Default : System.Web.UI.Page
         Page.Title = "One Mission Society | Keywords go here | Keywords go here";
 
         // Set top level navigation
-        Master.TopLevelNavigation = ApplicationLogic.TopLevelNavigation.Home;
+        Master.TopLevelNavigation = Utilities.TopLevelNavigation.Home;
     }
 }

@@ -1,11 +1,15 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="SiteNavigation.ascx.cs" Inherits="UserControls_SiteNavigation" %>
 
+<div id="donationCountBubbleContainer">
+    <span id="donationCountBubble" runat="server" clientidmode="static"></span>
+</div>
 <ul id="menu">
     <li class="hoverAnimationBackground" id="navHome" runat="server"><a href="/default.aspx">Home</a></li>
-    <li class="hoverAnimationBackground" id="navGive" runat="server"><a href="/give">Give</a></li>
+    <li class="hoverAnimationBackground" id="navGive" runat="server"><a href="/give" id="aGive">Give</a>
+        
+    </li>
     <li class="hoverAnimationBackground" id="navGo" runat="server"><a href="#">Go</a></li>
     <li class="hoverAnimationBackground" id="navPray" runat="server"><a href="/pray-for-missions">Pray</a></li>
-
     <li>
         <a href="#">Ministries</a>
         <ul>

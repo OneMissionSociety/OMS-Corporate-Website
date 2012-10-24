@@ -12,7 +12,7 @@
 <asp:Content ID="contentContent" ContentPlaceHolderID="PageContent" runat="Server">
     <%-- Give --%>
     <div class="pictureBox shadow">
-        <a href="#">
+        <a href="/give">
             <div class="pictureBoxDescription nextArrow">
                 <h2>GIVE</h2>
                 <p>

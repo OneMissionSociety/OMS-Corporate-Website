@@ -17,7 +17,6 @@
             <%-- Navigation Content --%>
             <uc:SiteNavigation runat="server" ID="ucSiteNavigation" ClientIDMode="Static" />
 
-
             <%-- Page Content --%>
             <div id="pageContent">
                 <%-- Side Navigation --%>
@@ -32,7 +31,7 @@
         </div>
 
         <%-- Footer Content --%>
-        <uc:SiteFooter runat="server" ID="ucSiteFooter" ClientIDMode="Static" />
+        <uc:SiteFooter runat="server" ID="ucSiteFooter" ClientIDMode="Static" />    
     </form>
 </body>
 </html>

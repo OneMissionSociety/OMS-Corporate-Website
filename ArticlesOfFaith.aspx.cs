@@ -13,6 +13,6 @@ public partial class ArticlesOfFaith : System.Web.UI.Page
         Page.Title = "Articles of Faith";
 
         // Set top level navigation
-        Master.TopLevelNavigation = ApplicationLogic.TopLevelNavigation.AboutUs;
+        Master.TopLevelNavigation = Utilities.TopLevelNavigation.AboutUs;
     }
 }

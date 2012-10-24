@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class SiteMasterSideNav : System.Web.UI.MasterPage
+public partial class SiteMasterSideNav : BaseMasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -18,5 +18,9 @@ public partial class SiteMasterSideNav : System.Web.UI.MasterPage
         ucSideSiteNavigation.LoadSideNavigationItems(this.TopLevelNavigation, Request.Path.Replace("/OmsCorporate/", String.Empty));
     }
 
-    public ApplicationLogic.TopLevelNavigation TopLevelNavigation { get; set; }
+    public Utilities.TopLevelNavigation TopLevelNavigation { get; set; }
+    public void AddSideNavItem(BusinessLogic.SideNavigationItem sideNavItem)
+    {
+        ucSideSiteNavigation.ContextualSideNavItem = sideNavItem;
+    }
 }
